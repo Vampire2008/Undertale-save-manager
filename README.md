@@ -11,3 +11,25 @@ This version included:
 
 Requiments:
  - .NET Framework 4.7.1
+
+Supported languages:
+ - English
+ - Russian
+
+Русский
+
+Улучшенная версия [Undertale Save Manager](https://github.com/LycaonIsAWolf/UndertaleSaveManager) сделаного [LycaonIsAWolf](https://github.com/LycaonIsAWolf)
+
+Эта версия включает:
+ - Список всех сохранений, сгрупированный по имени персонажа
+ - Сохранение включает информацию о имени персонажа и времени сохранения
+ - Функции Сохранения, Загрузки, Удаления работают со списком сохранения
+ - Сохранения хранятся внутри папки сохранений игры
+ - Доступна конвертация старых сохранений в новые
+
+Требования:
+ - .NET Framework 4.7.1
+
+Поддерживаемые языки:
+ - Английский
+ - Русский

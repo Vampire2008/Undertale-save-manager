@@ -43,9 +43,9 @@ namespace UndertaleSaveManager
 						Tag = save
 					});
 				}
-				catch (Exception e)
+				catch (Exception)
 				{
-					//TODO: Save broken
+					//Skip if save broken
 				}
 			}
 		}
@@ -60,7 +60,6 @@ namespace UndertaleSaveManager
 			{
 				if (Path.GetExtension(file) != ".uts")
 				{
-					//Console.WriteLine("Copying " + Path.GetFileName(file) + "...");
 					File.Copy(file, Path.Combine(_currentSavePath, Path.GetFileName(file)), true);
 				}
 			}
@@ -117,7 +116,6 @@ namespace UndertaleSaveManager
 			Directory.CreateDirectory(Path.Combine(_savesPath, saveDir));
 			foreach (var file in currentFiles)
 			{
-				//Console.WriteLine("Copying " + Path.GetFileName(file) + "...");
 				File.Copy(file, Path.Combine(_savesPath, saveDir, Path.GetFileName(file)), true);
 			}
 			var charRegex = new Regex("Name=\"([A-Za-z]+)\"");
